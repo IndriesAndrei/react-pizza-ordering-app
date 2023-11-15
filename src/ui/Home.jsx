@@ -1,12 +1,16 @@
+import CreateUser from '../features/user/CreateUser'
+
 function Home() {
     return (
-      <div>
+      <div className='my-10 text-center sm:my-16 px-4'>
         {/* using TailwindCSS */}
-        <h1 className="text-xl font-semibold text-center">
+        <h1 className="text-xl font-semibold mb-8 md:text-3xl">
           The best pizza.
           <br />
           <span className="text-yellow-500">Straight out of the oven, straight to you.</span>
         </h1>
+
+        <CreateUser />
       </div>
     );
 }
